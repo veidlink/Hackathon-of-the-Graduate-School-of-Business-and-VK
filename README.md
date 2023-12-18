@@ -32,7 +32,10 @@ X['random'] = np.random.normal(0, 1, size = X.shape[0])
 ```
 
 
-![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a9ef88f7-a40c-4eb8-96fe-f91d76c4efd3)
+<p align="center">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a9ef88f7-a40c-4eb8-96fe-f91d76c4efd3" alt="Description of Image">
+</p>
+
 
 
 From the provided visualization, it can be understood that all features are relatively important for classification as their shap values are greater than that of a random feature. We also tried to exclude some features by threshold shap value, but in each case this only brought a loss of quality. For this reason, we left all features except 5th. 
@@ -55,7 +58,7 @@ X_train_resampled, y_train_resampled = sm.fit_resample(X, y)
 ![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/4a2070c0-f9ac-4d55-8baa-a68666df3d40)
 
 
-However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Среди гипотез, которые мы проверяли, также были понижение размерности и кластеризация данных (кластеры участвовали в предсказании как дополнительный признак).
+However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Among the hypotheses we tested were also dimensionality reduction and data clustering (clusters participated in the prediction as an additional feature).
 
 
 To sum up, CatBoost gave us a score of about 0.85 on the f1-score metric, but we didn't stop there.
