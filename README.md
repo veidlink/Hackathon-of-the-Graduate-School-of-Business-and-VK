@@ -3,8 +3,8 @@ Predicting patient recovery using ML algorithms, image recognition for sanctuary
 
 ## 🦸‍♂️ Team
 - [Solomon](https://github.com/veidlink)
-- [Roman]()
-- [Katerina]()
+- [Roman](https://github.com/rtccreator)
+- [Katerina](https://github.com/dekatrine)
 - [Nikita]()
 
 ## 🎯 Task 1
