@@ -21,7 +21,10 @@ We dropped feature number 5 because it was highly linearly correlated with the t
 After obtaining the initial result with the CatBoost model tuned using the Optuna library, we visualized the feature importances to test several hypotheses.
 
 **1. Adding a random generated feature to see how it would affect the predictions of the model**
-```X['random'] = np.random.normal(0, 1, size = X.shape[0])```
+
+```
+X['random'] = np.random.normal(0, 1, size = X.shape[0])
+```
 
 Our hypothesis was that if there are features whose influence on the model is less than that of this random variable, they can be removed without loss, and perhaps even with an improvement in model performance.
 ![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a9ef88f7-a40c-4eb8-96fe-f91d76c4efd3)
