@@ -19,8 +19,8 @@ We dropped feature number 5 because it was highly linearly correlated with the t
 
 |   | target |
 |---|--------|
-| 5 | 1.00000|
-| target | 0.85876|
+| 5 | 0.85876|
+| target | 1.00000|
 
 After obtaining the initial result with the CatBoost model tuned using the Optuna library, we visualized the feature importances to test several hypotheses. 
 
