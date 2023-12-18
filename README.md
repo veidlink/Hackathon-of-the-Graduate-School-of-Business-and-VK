@@ -33,19 +33,17 @@ X['random'] = np.random.normal(0, 1, size = X.shape[0])
 
 
 <p align="center">
-  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a9ef88f7-a40c-4eb8-96fe-f91d76c4efd3" alt="Description of Image">
+  <img src=https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/8418532b-4865-4819-bfd1-d95da3965ca9" alt="Description of Image">
 </p>
 
-
-
+https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/8418532b-4865-4819-bfd1-d95da3965ca9
 From the provided visualization, it can be understood that all features are relatively important for classification as their shap values are greater than that of a random feature. We also tried to exclude some features by threshold shap value, but in each case this only brought a loss of quality. For this reason, we left all features except 5th. 
 
 The next problem we tried to deal with was class imbalance. In the training model, the positive class is represented about half as much as the negative class. This is not a critical imbalance, but it hinders the potential of classification models.
 
 <p align="center">
-  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/b87592e5-8255-4a4d-8812-de0e349e96cb" alt="Description of Image">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/f0e53f2e-700f-4bd0-929c-53e2fe32f0d2" alt="Description of Image">
 </p>
-
 
 We tried using the SMOTE method (Synthetic Minority Over-sampling Technique) to tackle this issue. The main idea of SMOTE is to create synthetic (not real) samples from the class with fewer observations to balance the class distribution. For each selected sample from the minority class, the method finds its k nearest neighbors, takes the selected sample and one of its nearest neighbors, and then creates a synthetic sample lying on the line connecting these two samples. This is done by choosing a random point on this line. The process is repeated until the number of samples in the minority class becomes comparable to the number of samples in the majority class
 
@@ -59,7 +57,7 @@ X_train_resampled, y_train_resampled = sm.fit_resample(X, y)
 
 
 <p align="center">
-  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/4a2070c0-f9ac-4d55-8baa-a68666df3d40" alt="Description of Image">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/47ce0bde-1a4b-4aac-bcf7-a786db99987c" alt="Description of Image">
 </p>
 
 
