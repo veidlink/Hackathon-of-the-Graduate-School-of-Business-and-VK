@@ -15,7 +15,7 @@ The task for VK Predict, a business unit of the company VK, involves developing 
 ## Feature selection
 
 
-We dropped feature number 5 because it was highly linearly correlated with the target variable in the training dataset, while this was not observed in the test dataset. The model was overfitting on the 5th feature, which was causing a decrease in performance, and we corrected this
+We dropped feature number 5 because it was highly linearly correlated with the target variable in the training dataset, while this was not observed in the test dataset. The model was overfitting on the 5th feature, which was causing a decrease in performance, and we corrected this.
 
 |   | target |
 |---|--------|
