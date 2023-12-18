@@ -65,6 +65,14 @@ However, this idea, due to non-linear relationships in the data, did not improve
 
 To sum up, CatBoost gave us a score of about 0.85 on the f1-score metric, but we didn't stop there.
 
+```
+CatBoost_best_params = {'depth': 8,
+ 'learning_rate': 0.14993163898007728,
+ 'iterations': 807,
+ 'l2_leaf_reg': 2.0883307004683904,
+ 'min_data_in_leaf': 3,
+ 'bagging_temperature': 0.5717641539824976}
+```
 
 ### 📝 Our best solution | Task 1
 
