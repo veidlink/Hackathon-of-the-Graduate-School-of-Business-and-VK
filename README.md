@@ -2,8 +2,7 @@
 Predicting patient recovery using ML algorithms, image recognition for sanctuary by computer vision models, recommendation system for advertising banners 
 
 ## 🦸‍♂️ Team
-We are the bronze medalists of this competition 🏅 
-
+We are the bronze medalists of this competition. 
 Get to know us:
 - [Solomon](https://github.com/veidlink)
 - [Roman](https://github.com/rtccreator)
