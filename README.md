@@ -42,7 +42,10 @@ From the provided visualization, it can be understood that all features are rela
 
 The next problem we tried to deal with was class imbalance. In the training model, the positive class is represented about half as much as the negative class. This is not a critical imbalance, but it hinders the potential of classification models.
 
-![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/b87592e5-8255-4a4d-8812-de0e349e96cb)
+<p align="center">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/b87592e5-8255-4a4d-8812-de0e349e96cb" alt="Description of Image">
+</p>
+
 
 We tried using the SMOTE method (Synthetic Minority Over-sampling Technique) to tackle this issue. The main idea of SMOTE is to create synthetic (not real) samples from the class with fewer observations to balance the class distribution. For each selected sample from the minority class, the method finds its k nearest neighbors, takes the selected sample and one of its nearest neighbors, and then creates a synthetic sample lying on the line connecting these two samples. This is done by choosing a random point on this line. The process is repeated until the number of samples in the minority class becomes comparable to the number of samples in the majority class
 
@@ -55,7 +58,9 @@ X_train_resampled, y_train_resampled = sm.fit_resample(X, y)
 ```
 
 
-![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/4a2070c0-f9ac-4d55-8baa-a68666df3d40)
+<p align="center">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/4a2070c0-f9ac-4d55-8baa-a68666df3d40" alt="Description of Image">
+</p>
 
 
 However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Among the hypotheses we tested were also dimensionality reduction and data clustering (clusters participated in the prediction as an additional feature).
@@ -77,5 +82,7 @@ We used the following parameters:
  'mlpclassifier__solver': 'adam'}
 ```
 
-![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a046a619-5f67-4fd2-96a2-4e3800ed89bb)
+<p align="center">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a046a619-5f67-4fd2-96a2-4e3800ed89bb" alt="Description of Image">
+</p>
 
