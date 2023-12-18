@@ -37,7 +37,7 @@ X['random'] = np.random.normal(0, 1, size = X.shape[0])
 
 From the provided visualization, it can be understood that all features are relatively important for classification as their shap values are greater than that of a random feature. We also tried to exclude some features by threshold shap value, but in each case this only brought a loss of quality. For this reason, we left all features except 5th. 
 
-The next problem we tried to deal with was class imbalance. In the training model, the positive class is represented about half as much as the negative class. This is not a critical imbalance, but it reduces the potential of classification models 
+The next problem we tried to deal with was class imbalance. In the training model, the positive class is represented about half as much as the negative class. This is not a critical imbalance, but it hinders the potential of classification models.
 
 ![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/b87592e5-8255-4a4d-8812-de0e349e96cb)
 
@@ -55,11 +55,15 @@ X_train_resampled, y_train_resampled = sm.fit_resample(X, y)
 ![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/4a2070c0-f9ac-4d55-8baa-a68666df3d40)
 
 
-However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01.
+However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Среди гипотез, которые мы проверяли, также были понижение размерности и кластеризация данных (кластеры участвовали в предсказании как дополнительный признак).
 
-### 📝 Solution | Task 1
 
-Our best solution was a Multi-layer Perceptron neural network tuned through GridSearchCV with F1-score equal to 0.9213. 
+To sum up, CatBoost gave us a score of about 0.85 on the f1-score metric, but we didn't stop there.
+
+
+### 📝 Our best solution | Task 1
+
+Our most prodctive approach was a pipeline of a StandardScaler and a Multi-layer Perceptron neural network tuned through GridSearchCV. It yielded us the finest result of F1-score equal to 0.9213. 
 We used the following parameters:
 
 ```
@@ -70,4 +74,5 @@ We used the following parameters:
  'mlpclassifier__solver': 'adam'}
 ```
 
+![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a046a619-5f67-4fd2-96a2-4e3800ed89bb)
 
