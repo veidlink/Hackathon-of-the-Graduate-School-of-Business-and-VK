@@ -79,7 +79,3 @@ We used the following parameters:
  'mlpclassifier__solver': 'adam'}
 ```
 
-<p align="center">
-  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/a046a619-5f67-4fd2-96a2-4e3800ed89bb" alt="Description of Image">
-</p>
-
