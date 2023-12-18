@@ -36,7 +36,6 @@ X['random'] = np.random.normal(0, 1, size = X.shape[0])
   <img src=https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/8418532b-4865-4819-bfd1-d95da3965ca9" alt="Description of Image">
 </p>
 
-https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/8418532b-4865-4819-bfd1-d95da3965ca9
 From the provided visualization, it can be understood that all features are relatively important for classification as their shap values are greater than that of a random feature. We also tried to exclude some features by threshold shap value, but in each case this only brought a loss of quality. For this reason, we left all features except 5th. 
 
 The next problem we tried to deal with was class imbalance. In the training model, the positive class is represented about half as much as the negative class. This is not a critical imbalance, but it hinders the potential of classification models.
