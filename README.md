@@ -91,5 +91,8 @@ We used the following parameters:
 
 ---
 
-![image](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/077b38da-ed84-47b2-ba16-5fa8f2ad3211)
+<p align="center">
+  <img src="(https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/077b38da-ed84-47b2-ba16-5fa8f2ad3211" alt="Description of Image">
+</p>
+
 
