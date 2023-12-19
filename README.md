@@ -26,7 +26,7 @@ We deleted 1557 outliers from the data with IQR (interquartile range). We also d
 
 After obtaining the initial result with the CatBoost model tuned using the Optuna library, we visualized the feature importances to test several hypotheses. 
 
-Our 1st hypothesis was that if there are features whose influence on the model is less than that of this random variable, they can be removed without loss, and perhaps even with an improvement in model performance.
+We decided to add a dummy (noise) feature with random generated values in training data. Our 1st hypothesis was that if there are features whose influence on the model is less than that of this random variable, they can be removed without loss, and perhaps even with an improvement in model performance.
 
 
 ```
