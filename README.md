@@ -7,7 +7,7 @@ Get to know us:
 - [Solomon](https://github.com/veidlink)
 - [Roman](https://github.com/rtccreator)
 - [Katerina](https://github.com/dekatrine)
-- [Nikita]()
+- [Nikita](https://github.com/AnalyseOptimize)
 
 ## 🎯 Task 1
 
