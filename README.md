@@ -115,6 +115,8 @@ To tune the model yourself and find the best parameters pass _--tune_ as an argu
 
 A large nature reserve is conducting a tender to develop an AI service to assist in tracking wildlife populations, aiming to relieve staff from the current manual monthly counting process. VK company is interested in securing this major contract, promising a bonus equivalent to one month's salary for the team that presents a machine learning model accurately and quickly recognizing elements in images. The task involves counting the number of squares in a set of test images containing geometric shapes like squares, rectangles, parallelograms, and circles. The dataset includes images with only squares, images with squares and other shapes without overlaps, and images with squares and overlapping shapes. The training set (train.csv) provides the image path, the number of squares, and the image type, while the test set (test.csv) lacks square count and type. Model's performance was evaluated using the Root Mean Square Error (RMSE) metric.
 
+---
+
 ## 🎯 Task 3 | Recommendation system for advertising banners
 
 myTarget is a self-service advertising platform for social networks such as VKontakte and Odnoklassniki, as well as other VK projects, covering over 90% of Russian-speaking internet users. Owned by VK, the platform prioritizes user experience by continually refining algorithms to display only relevant advertisements.
