@@ -115,20 +115,13 @@ To tune the model yourself and find the best parameters pass _--tune_ as an argu
 
 A large nature reserve is conducting a tender to develop an AI service to assist in tracking wildlife populations, aiming to relieve staff from the current manual monthly counting process. VK company is interested in securing this major contract, promising a bonus equivalent to one month's salary for the team that presents a machine learning model accurately and quickly recognizing elements in images. The task involves counting the number of squares in a set of test images containing geometric shapes like squares, rectangles, parallelograms, and circles. The dataset includes images with only squares, images with squares and other shapes without overlaps, and images with squares and overlapping shapes. The training set (train.csv) provides the image path, the number of squares, and the image type, while the test set (test.csv) lacks square count and type. Model's performance was evaluated using the Root Mean Square Error (RMSE) metric.
 
----
-
-<p align="center">
-  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/077b38da-ed84-47b2-ba16-5fa8f2ad3211" alt="Description of Image">
-</p>
-
-
 ## 🎯 Task 3 | Recommendation system for advertising banners
 
 myTarget is a self-service advertising platform for social networks such as VKontakte and Odnoklassniki, as well as other VK projects, covering over 90% of Russian-speaking internet users. Owned by VK, the platform prioritizes user experience by continually refining algorithms to display only relevant advertisements.
 
 With the upcoming holiday season, major marketing companies task the myTarget team with building an improved banner recommendation system based on view and like logs. The logs include user_id (user identifier), item_id (banner identifier), like (whether the user liked the banner), and timestamp (Unix time in seconds of the action). Additionally, users and banners have features with a dimensionality of 32.
 
-Your goal is to predict 20 banners for users, and the solution's quality will be evaluated based on the proportion of "liked" banners by users from your proposed list (top-20 accuracy).
+Our goal was to predict 20 banners for users, and the solution's quality was evaluated based on the proportion of "liked" banners by users from your proposed list (top-20 accuracy).
 
 ### Tried approaches | Task 3
 
@@ -139,4 +132,8 @@ Your goal is to predict 20 banners for users, and the solution's quality will be
 
 More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
 
+---
 
+<p align="center">
+  <img src="https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/assets/137414808/077b38da-ed84-47b2-ba16-5fa8f2ad3211" alt="Description of Image">
+</p>
