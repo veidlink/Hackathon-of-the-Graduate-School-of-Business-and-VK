@@ -101,7 +101,10 @@ pip install -r requirements.txt
 
 To use out model, ensure you're in the folder containing *tune-fit-predict.py*. Run the script by typing:
 
-```python tune-fit-predict.py``` 
+```
+python tune-fit-predict.py
+``` 
+
 
 To tune the model yourself and find the best parameters pass _--tune_ as an argument or stick with --no-tune to use our best settings. The script will save the predictions in a file named results.csv in the same folder.
 
