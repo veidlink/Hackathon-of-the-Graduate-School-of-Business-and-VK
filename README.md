@@ -90,6 +90,21 @@ We used the following parameters:
  'mlpclassifier__solver': 'adam'}
 ```
 
+##### ⚙️  Guide for MLP Classifier Inference Script
+
+Firstly, clone this repossitory, navigate to the folder and run this line of code to install all requirements:
+
+
+```
+pip install -r requirements.txt
+```
+
+To use out model, ensure you're in the folder containing *tune-fit-predict.py*. Run the script by typing:
+
+```python tune-fit-predict.py --tune True``` 
+
+To tune the model yourself and find the best parameters set _--tune to_ 'True' or stick with 'False' to use our best settings. The script will save the predictions in a file named results.csv in the same folder.
+
 ---
 
 
