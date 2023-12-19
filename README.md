@@ -122,3 +122,21 @@ A large nature reserve is conducting a tender to develop an AI service to assist
 </p>
 
 
+## 🎯 Task 3 | Recommendation system for advertising banners
+
+myTarget is a self-service advertising platform for social networks such as VKontakte and Odnoklassniki, as well as other VK projects, covering over 90% of Russian-speaking internet users. Owned by VK, the platform prioritizes user experience by continually refining algorithms to display only relevant advertisements.
+
+With the upcoming holiday season, major marketing companies task the myTarget team with building an improved banner recommendation system based on view and like logs. The logs include user_id (user identifier), item_id (banner identifier), like (whether the user liked the banner), and timestamp (Unix time in seconds of the action). Additionally, users and banners have features with a dimensionality of 32.
+
+Your goal is to predict 20 banners for users, and the solution's quality will be evaluated based on the proportion of "liked" banners by users from your proposed list (top-20 accuracy).
+
+### Tried approaches | Task 3
+
+- **SVD of User-Item Matrix**: filling missing values with -2 and use low-rank factorizations ($r = 20$). 
+- **User-Based Approach (Collaborative Filtering)**: Calculate similarities between users and recommend banners liked by similar users for each user..
+- **Item-Based Approach**: recommend for each user banners similar to ones he liked.
+- **Clustering**: recommend banners from the most liked category (did not work because clusters are not large enough).
+
+More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
+
+
