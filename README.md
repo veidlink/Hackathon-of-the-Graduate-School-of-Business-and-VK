@@ -90,7 +90,7 @@ We used the following parameters:
  'mlpclassifier__solver': 'adam'}
 ```
 
-##### ⚙️  Guide for MLP Classifier Inference Script
+### ⚙️  Guide for MLP Classifier Inference Script
 
 Firstly, clone this repossitory, navigate to the folder and run this line of code to install all requirements:
 
