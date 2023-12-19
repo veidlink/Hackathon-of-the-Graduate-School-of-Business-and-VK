@@ -129,7 +129,7 @@ Our goal was to predict 20 banners for users, and the solution's quality was eva
 
 - **SVD of User-Item Matrix**: filling missing values with -2 and use low-rank factorizations ($r = 20$). 
 - **User-Based Approach (Collaborative Filtering)**: Calculate similarities between users and recommend banners liked by similar users for each user..
-- **Item-Based Approach**: recommend for each user banners similar to ones he liked.
+- **Item-Based Approach**: recommend for each user banners similar to ones he liked. Our best solution (0.535 top-20 accuracy)
 - **Clustering**: recommend banners from the most liked category (did not work because clusters are not large enough).
 
 More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
