@@ -23,6 +23,8 @@ The task for VK Predict, a business unit of the company VK, involves developing 
 - **Optuna, GridSearchCV** for model hyperparameters tuning
 - **Pytorch** for writing custom FCNN
 
+---
+
 ### Feature selection and some experiments 
 
 
