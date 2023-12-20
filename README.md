@@ -17,7 +17,7 @@ The task for VK Predict, a business unit of the company VK, involves developing 
 ### ⚙️ Tech stack 
 - **Scikit-learn** 
 - **Catboost** as a baseline approach
-- **Perceptron** as a final solution
+- **Perceptron** as the final solution
 - **Matplotlib, Seaborn** for EDA
 - **Shap** for feature selection and visualisation
 - **Optuna, GridSearchCV** for model hyperparameters tuning
