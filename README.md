@@ -20,7 +20,7 @@ The task for VK Predict, a business unit of the company VK, involves developing 
 - **Perceptron** as the final solution
 - **Matplotlib, Seaborn** for EDA
 - **Shap** for feature selection and visualisation
-- **Optuna, GridSearchCV** for model hyperparameters tuning
+- **Optuna, GridSearchCV** for hyperparameter tuning
 - **Pytorch** for writing custom FCNN
 
 ### Feature selection and some experiments 
