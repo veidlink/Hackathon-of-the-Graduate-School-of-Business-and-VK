@@ -14,7 +14,7 @@ Get to know us:
 
 The task for VK Predict, a business unit of the company VK, involves developing a predictive model for a pharmaceutical company. This model should predict patient recovery based on test results, specifically for those treated with a new, expensive medication designed to replace a less effective, cheaper one. The data consists of anonymized patient features correlating to test results, with a training dataset (train.csv) including a target feature indicating whether the illness was cured by the medication (values 0 or 1), and a test dataset (test.csv) for predictions. Solution was evaluated using the F1-score metric.
 
-## ⚙️ Tech stack 
+### ⚙️ Tech stack 
 - **Scikit-learn** 
 - **Catboost** as a baseline approach
 - **Perceptron** as a final solution
@@ -22,8 +22,6 @@ The task for VK Predict, a business unit of the company VK, involves developing 
 - **Shap** for feature selection and visualisation
 - **Optuna, GridSearchCV** for model hyperparameters tuning
 - **Pytorch** for writing custom FCNN
-
----
 
 ### Feature selection and some experiments 
 
