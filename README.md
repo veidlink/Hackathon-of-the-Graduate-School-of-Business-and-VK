@@ -72,7 +72,7 @@ X_train_resampled, y_train_resampled = sm.fit_resample(X, y)
 </p>
 
 
-However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Among the hypotheses we tested were also dimensionality reduction and data clustering (clusters participated in the prediction as an additional feature). All of that wasn't effective either.
+However, this idea, due to non-linear relationships in the data, did not improve the result. In fact, the metric dropped by about 0.01. Among the hypotheses we tested were also dimensionality reduction and data clustering (clusters participated in the prediction as an additional feature). All of that wasn't effective either. We also tried to write a custom fully-connected multi-layer neural network, but it turned out to be too complex. 
 
 
 To sum up, CatBoost gave us a score of about 0.85 on the f1-score metric, but we didn't stop there.
