@@ -124,12 +124,28 @@ To tune the model yourself and find the best parameters pass _--tune_ as an argu
 
 A large nature reserve is conducting a tender to develop an AI service to assist in tracking wildlife populations, aiming to relieve staff from the current manual monthly counting process. VK company is interested in securing this major contract, promising a bonus equivalent to one month's salary for the team that presents a machine learning model accurately and quickly recognizing elements in images. The task involves counting the number of squares in a set of test images containing geometric shapes like squares, rectangles, parallelograms, and circles. The dataset includes images with only squares, images with squares and other shapes without overlaps, and images with squares and overlapping shapes. The training set (train.csv) provides the image path, the number of squares, and the image type, while the test set (test.csv) lacks square count and type. Model's performance was evaluated using the Root Mean Square Error (RMSE) metric.
 
-### ⚙️ The model 
-- **ResNet-50 pre-trained model**
+### Samples of train/test dataset:
 
-### Tried approaches | Task 2
-- **OpenCV shape recognition: based on the amount of borders or angles:**
--- ****
+
+![Figures 1](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/squares_samples/2993.png)
+![Figures 2](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/squares_samples/2995.png)
+![Figures 3](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/squares_samples/5670.png)
+
+### ⚙️ The model 
+- **ResNet-50 pre-trained & thoroughly fine-tuned model**
+
+### 📝 Tried approaches | Task 2
+**OpenCV shape recognition: based on the amount of borders or angles**
+- Odds: High RMSE due to various problems, like failures in detection of figures, which are overlaid by each other; unexpected behaviour due to thick and thin borders of squares; errors in the cases of complicated images (as you can probably see on samples below).
+- However, it is still possible to achieve a decent score without using Neural Networks (the great way implemented we saw on Hackathon was a dot-placing method on the angles of figures relevant to squares & calculating their amount to find the target square quantity).
+  
+**ViT, ResNeXt**
+- Odds: Higher RMSE compared to our custom-tuned ResNet.
+
+### The best result we approached was ResNet50 with unfreezed layers.
+You can find the weights for the best epoch and our cleaned, model-training `.ipynb` [here](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/Resnet50_Training.ipynb) - we finally came out with unfreezing 3 layers. 
+The Python framework used is PyTorch on CUDA.
+
 ---
 
 ## 🎯 Task 3 | Recommendation system for advertising banners
