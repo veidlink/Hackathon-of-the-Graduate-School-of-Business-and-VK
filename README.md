@@ -88,7 +88,7 @@ CatBoost_best_params = {'depth': 8,
 
 ### 📝 Our best solution | Task 1
 
-Our most prodctive approach was a pipeline of a StandardScaler and a Multi-layer Perceptron neural network tuned through GridSearchCV. It yielded us the finest result of F1-score equal to 0.9213. 
+Our most productive approach was a pipeline of a StandardScaler and a Multi-layer Perceptron neural network tuned through GridSearchCV. It yielded us the finest result of F1-score equal to 0.9213. 
 We used the following parameters:
 
 ```
@@ -124,6 +124,12 @@ To tune the model yourself and find the best parameters pass _--tune_ as an argu
 
 A large nature reserve is conducting a tender to develop an AI service to assist in tracking wildlife populations, aiming to relieve staff from the current manual monthly counting process. VK company is interested in securing this major contract, promising a bonus equivalent to one month's salary for the team that presents a machine learning model accurately and quickly recognizing elements in images. The task involves counting the number of squares in a set of test images containing geometric shapes like squares, rectangles, parallelograms, and circles. The dataset includes images with only squares, images with squares and other shapes without overlaps, and images with squares and overlapping shapes. The training set (train.csv) provides the image path, the number of squares, and the image type, while the test set (test.csv) lacks square count and type. Model's performance was evaluated using the Root Mean Square Error (RMSE) metric.
 
+### ⚙️ The model 
+- **ResNet-50 pre-trained model**
+
+### Tried approaches | Task 2
+- **OpenCV shape recognition: based on the amount of borders or angles:**
+-- ****
 ---
 
 ## 🎯 Task 3 | Recommendation system for advertising banners
@@ -133,7 +139,6 @@ myTarget is a self-service advertising platform for social networks such as VKon
 With the upcoming holiday season, major marketing companies task the myTarget team with building an improved banner recommendation system based on view and like logs. The logs include user_id (user identifier), item_id (banner identifier), like (whether the user liked the banner), and timestamp (Unix time in seconds of the action). Additionally, users and banners have features with a dimensionality of 32.
 
 Our goal was to predict 20 banners for users, and the solution's quality was evaluated based on the proportion of "liked" banners by users from your proposed list (top-20 accuracy).
-
 
 ### ⚙️ Tech stack 
 - **Scikit-learn** 
@@ -152,7 +157,7 @@ Our goal was to predict 20 banners for users, and the solution's quality was eva
 - **Item-Based Approach**: recommend for each user banners similar to ones he liked. Our best solution (0.535 top-20 accuracy)
 - **Clustering**: recommend banners from the most liked category (did not work because clusters are not large enough).
 
-More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
+More details about EDA and our implementations of algorithms above in `.ipynb` file in `Task3` folder.
 
 
 You can also run a `task3_script.py` *having all test and train data in the same directory* to get best predictions according to item-based approach. 
