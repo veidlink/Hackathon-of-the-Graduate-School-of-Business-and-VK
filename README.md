@@ -143,8 +143,10 @@ A large nature reserve is conducting a tender to develop an AI service to assist
 - Odds: Higher RMSE compared to our custom-tuned ResNet.
 
 ### The best result we approached was ResNet50 with unfreezed layers.
-You can find the weights for the best epoch and our cleaned, model-training `.ipynb` [here](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/Resnet50_Training.ipynb) - we finally came out with unfreezing 3 layers. 
+You can find the weights for the best epoch and our cleaned, model-training `.ipynb` [here](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/Resnet50_Training.ipynb) - we finally came out with unfreezing 3 layers & tuning them afterwards. 
 The Python framework used is PyTorch on CUDA.
+
+[The whole dataset (train & test)](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/tree/main/Task2). You'll need to extract `.zip` archives to the corresponding "train_data" and "test_data" folders in order to use them in combination with CSVs.
 
 ---
 
