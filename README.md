@@ -134,14 +134,6 @@ With the upcoming holiday season, major marketing companies task the myTarget te
 
 Our goal was to predict 20 banners for users, and the solution's quality was evaluated based on the proportion of "liked" banners by users from your proposed list (top-20 accuracy).
 
-### Tried approaches | Task 3
-
-- **SVD of User-Item Matrix**: filling missing values with -2 and use low-rank factorizations ($r = 20$). 
-- **User-Based Approach (Collaborative Filtering)**: Calculate similarities between users and recommend banners liked by similar users for each user..
-- **Item-Based Approach**: recommend for each user banners similar to ones he liked. Our best solution (0.535 top-20 accuracy)
-- **Clustering**: recommend banners from the most liked category (did not work because clusters are not large enough).
-
-More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
 
 ### ⚙️ Tech stack 
 - **Scikit-learn** 
@@ -151,8 +143,19 @@ More details about EDA and our implementations of algorithms above in `.ipybn` f
 - **Seaborn** for visualization
 - **Yellowbrick** for clustering
 - **Catboost** for classification approach.
-  
-  You can also run a `task3_script.py` *having all test and train data in the same directory* to get best predictions according to item-based approach. 
+
+
+### Tried approaches | Task 3
+
+- **SVD of User-Item Matrix**: filling missing values with -2 and use low-rank factorizations ($r = 20$). 
+- **User-Based Approach (Collaborative Filtering)**: Calculate similarities between users and recommend banners liked by similar users for each user..
+- **Item-Based Approach**: recommend for each user banners similar to ones he liked. Our best solution (0.535 top-20 accuracy)
+- **Clustering**: recommend banners from the most liked category (did not work because clusters are not large enough).
+
+More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
+
+
+You can also run a `task3_script.py` *having all test and train data in the same directory* to get best predictions according to item-based approach. 
 
 ---
 
