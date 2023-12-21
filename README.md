@@ -146,7 +146,9 @@ A large nature reserve is conducting a tender to develop an AI service to assist
 You can find the weights for the best epoch and our cleaned, model-training `.ipynb` [here](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/Resnet50_Training.ipynb) - we finally came out with unfreezing 3 layers & tuning them afterwards. 
 The Python framework used is PyTorch on CUDA.
 
-[The whole dataset (train & test)](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/tree/main/Task2). You'll need to extract `.zip` archives to the corresponding "train_data" and "test_data" folders in order to use them in combination with CSVs.
+[The whole dataset (train & test) & `square_predict.py` script](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/tree/main/Task2). You'll need to extract `.zip` archives to the corresponding "train_data" and "test_data" folders in order to use them in combination with CSVs. Don't forget to install all required packages in your venv!
+
+[Model weights (Google Drive)](https://drive.google.com/file/d/13O62lw_DVluHyEMQZlAR7VpP6-gB7jL3/view?usp=drive_link) - you can either download them or fine-tune the model on your own and get weights using our `.ipynb` file.
 
 ---
 
