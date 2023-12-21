@@ -143,6 +143,17 @@ Our goal was to predict 20 banners for users, and the solution's quality was eva
 
 More details about EDA and our implementations of algorithms above in `.ipybn` file in `Task3` folder.
 
+### ⚙️ Tech stack 
+- **Scikit-learn** 
+- **Numpy** 
+- **Scipy**
+- **Pandas**
+- **Seaborn** for visualization
+- **Yellowbrick** for clustering
+- **Catboost** for classification approach.
+  
+  You can also run a `task3_script.py` *having all test and train data in the same directory* to get best predictions according to item-based approach. 
+
 ---
 
 <p align="center">
