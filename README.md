@@ -131,24 +131,28 @@ A large nature reserve is conducting a tender to develop an AI service to assist
 ![Figures 2](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/squares_samples/2995.png)
 ![Figures 3](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/squares_samples/5670.png)
 
-### ⚙️ The model 
-- **ResNet-50 pre-trained & thoroughly fine-tuned model**
+### ⚙️ Best model 
+- **ResNet-50 with several unfreezed and fine-tuned layers**
 
-### 📝 Tried approaches | Task 2
-**OpenCV shape recognition: based on the amount of borders or angles**
-- Odds: High RMSE due to various problems, like failures in detection of figures, which are overlaid by each other; unexpected behaviour due to thick and thin borders of squares; errors in the cases of complicated images (as you can probably see on samples below).
-- However, it is still possible to achieve a decent score without using Neural Networks (the great way implemented we saw on Hackathon was a dot-placing method on the angles of figures relevant to squares & calculating their amount to find the target square quantity).
   
-**ViT, ResNeXt**
-- Odds: Higher RMSE compared to our custom-tuned ResNet.
-
-### The best result we approached was ResNet50 with unfreezed layers.
 You can find the weights for the best epoch and our cleaned, model-training `.ipynb` [here](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/blob/main/Task2/Resnet50_Training.ipynb) - we finally came out with unfreezing 3 layers & tuning them afterwards. 
 The Python framework used is PyTorch on CUDA.
 
 [The whole dataset (train & test) & `square_predict.py` script](https://github.com/veidlink/Hackathon-of-the-Graduate-School-of-Business-and-VK/tree/main/Task2). You'll need to extract `.zip` archives to the corresponding "train_data" and "test_data" folders in order to use them in combination with CSVs. Don't forget to install all required packages in your venv!
 
 [Model weights (Google Drive)](https://drive.google.com/file/d/13O62lw_DVluHyEMQZlAR7VpP6-gB7jL3/view?usp=drive_link) - you can either download them or fine-tune the model on your own and get weights using our `.ipynb` file.
+
+
+### 📝 Tried approaches | Task 2
+**OpenCV shape recognition: based on the amount of borders or angles**
+- Odds: High RMSE due to various problems, like failures in detection of figures, which are overlaid by each other; unexpected behaviour due to thick and thin borders of squares; errors in the cases of complicated images (as you can probably see on samples below). It is also irrelevant for the real world implementation in a sanctuary as we would detect not 'squares' or any other figures, but animals. That's why we didn't try to enhance this approach.
+- However, it is still possible to achieve a decent score without using Neural Networks (an peculiar way of implementation that we saw on Hackathon was a dot-placing method on the angles of figures relevant to squares & calculating their amount to find the target square quantity).
+  
+**ViT, ResNeXt**
+- Odds: Higher RMSE compared to our custom-tuned ResNet. 
+
+**MobileNet**
+This model displayed appropriate perfomance with pre-trained weights and might have achieved better RMSE if we had unfrozen and trained some layers. However, due to time limitations we didn't do that. It's also notable that MobileNet, being relatively simple, might be unsuitable for the practical application.
 
 ---
 
