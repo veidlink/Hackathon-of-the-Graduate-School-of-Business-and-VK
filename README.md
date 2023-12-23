@@ -5,7 +5,7 @@ Predicting patient recovery using ML algorithms, image recognition for sanctuary
 We are the bronze medalists of this competition. 
 Get to know us:
 - [Solomon](https://github.com/veidlink)
-- [Roman](https://github.com/rtccreator)
+- [Roman](https://github.com/gblssroman)
 - [Katerina](https://github.com/dekatrine)
 - [Nikita](https://github.com/AnalyseOptimize)
 
