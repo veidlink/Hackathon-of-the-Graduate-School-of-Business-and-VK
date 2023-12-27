@@ -16,8 +16,8 @@ def remove_outliers(df, col):
     return df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
 
 def main(tune):
-    df = pd.read_csv('./Task1/train.csv')
-    data_test = pd.read_csv('./Task1/test.csv')
+    df = pd.read_csv('./train.csv')
+    data_test = pd.read_csv('./test.csv')
 
     X, y = df.drop(['5', 'target'], axis=1), df['target']
     X_test = data_test.drop(['5'], axis=1)
@@ -44,7 +44,7 @@ def main(tune):
             best_params = grid_mlp.best_params_
 
         preds_test = pd.DataFrame(grid_mlp.best_estimator_.predict(X_test)).rename({0: 'target'}, axis=1)
-        preds_test.to_csv('./Task1/results.csv', index=False)   
+        preds_test.to_csv('./results.csv', index=False)   
 
         print(f'Model tuned, pedictions made.\nYour parameters: {best_params}')
 
@@ -65,7 +65,7 @@ def main(tune):
         pipeline.fit(X, y)
 
         preds_test = pd.DataFrame(pipeline.predict(X_test)).rename({0: 'target'}, axis=1)
-        preds_test.to_csv('./Task1/results.csv', index=False)
+        preds_test.to_csv('./results.csv', index=False)
     
         print(f'Pedictions made.\nDefault parameters used: {MLP_best_params}')
 
