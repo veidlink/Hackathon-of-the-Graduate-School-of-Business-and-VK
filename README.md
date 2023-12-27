@@ -108,7 +108,7 @@ Firstly, clone this repossitory, navigate to the folder and run this line of cod
 pip install -r requirements.txt
 ```
 
-To use out model, ensure you're in the folder containing *TASK1-tune-fit-predict.py*. Run the script by typing:
+To use out model, ensure you're in the *Task1* folder. Run the script by typing:
 
 ```
 python TASK1-tune-fit-predict.py
